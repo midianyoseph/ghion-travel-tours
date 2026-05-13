@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Tour | Ghion Travel & Tours — Ethiopian Tour Reservations</title>
+  <meta name="description" content="Book your Ethiopian tour with Ghion Travel & Tours. Fill out our reservation form and we'll respond within 24–48 hours with availability and pricing." />
+  <meta property="og:title" content="Book a Tour — Ghion Travel & Tours" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=1200&q=80" />
+  <meta name="theme-color" content="#1B3A2D" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%231B3A2D'/><text x='16' y='22' text-anchor='middle' font-size='16' font-weight='900' fill='%23C9A84C' font-family='serif'>G</text></svg>" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav site-nav--solid" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Ghion Travel and Tours — Home">
+      <div class="nav-logo-mark">GTT</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Ghion Travel & Tours</span>
+        <span class="nav-logo-tagline">The Name You Trust</span>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-item">
+        <a href="tours.html" class="nav-link">Tours <span class="nav-dropdown-arrow">▾</span></a>
+        <div class="nav-dropdown" role="menu">
+          <a href="tours.html#addis-experiences" role="menuitem">Addis Experiences</a>
+          <a href="tours.html#multi-destination" role="menuitem">Multi-Destination Packages</a>
+          <a href="tours/homecoming.html" role="menuitem">The Homecoming (8 Days)</a>
+          <a href="tours/timket.html" role="menuitem">Timket in Lalibela</a>
+          <a href="tours/highlands-heritage.html" role="menuitem">Highlands &amp; Heritage (12 Days)</a>
+          <a href="tours/southern-rift-valley.html" role="menuitem">Southern Ethiopia</a>
+        </div>
+      </li>
+      <li><a href="ethiopia.html" class="nav-link">Discover Ethiopia</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="reservations.html" class="nav-link nav-cta active">Book Now</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="nav-mobile-overlay"></div>
+<nav class="nav-mobile" aria-label="Mobile navigation">
+  <div class="nav-mobile-header">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-mark">GTT</div><div class="nav-logo-text"><span class="nav-logo-name">Ghion Travel & Tours</span><span class="nav-logo-tagline">The Name You Trust</span></div></a>
+    <button class="nav-mobile-close" aria-label="Close menu">&times;</button>
+  </div>
+  <div class="nav-mobile-links">
+    <a href="index.html" class="nav-mobile-link">Home</a>
+    <a href="tours.html" class="nav-mobile-link">Tours</a>
+    <a href="ethiopia.html" class="nav-mobile-link">Discover Ethiopia</a>
+    <a href="about.html" class="nav-mobile-link">About Us</a>
+    <a href="gallery.html" class="nav-mobile-link">Gallery</a>
+    <a href="contact.html" class="nav-mobile-link">Contact</a>
+    <a href="reservations.html" class="nav-mobile-link cta">Book Now</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-label="Reservations page hero">
+  <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1600&q=80');" aria-hidden="true"></div>
+  <div class="page-hero-overlay" aria-hidden="true"></div>
+  <div class="container page-hero-content">
+    <h1>Book Your Tour</h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span aria-current="page">Reservations</span>
+    </nav>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="section" aria-labelledby="booking-heading">
+  <div class="container">
+    <div style="display:grid; grid-template-columns: 3fr 2fr; gap:3.5rem; align-items:start;">
+
+      <!-- BOOKING FORM -->
+      <div class="reveal">
+        <h2 id="booking-heading" style="margin-bottom:.5rem;">Tour Inquiry Form</h2>
+        <p style="margin-bottom:2rem;">Fill in the form below and our team will respond within <strong>24–48 hours</strong> with a personalized itinerary, availability confirmation, and detailed pricing.</p>
+
+        <form
+          action="https://formspree.io/f/info@ghiontour.com"
+          method="POST"
+          novalidate
+          aria-label="Tour booking inquiry form"
+        >
+          <input type="hidden" name="_subject" value="New Tour Inquiry — Ghion Travel & Tours" />
+          <input type="hidden" name="_next" value="https://ghiontour.com/thank-you.html" />
+
+          <div class="form-row" style="margin-bottom:1.25rem;">
+            <div class="form-group">
+              <label for="first-name">First Name <span aria-hidden="true" style="color:var(--color-terracotta);">*</span></label>
+              <input type="text" id="first-name" name="first_name" class="form-control" placeholder="Your first name" required autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span aria-hidden="true" style="color:var(--color-terracotta);">*</span></label>
+              <input type="text" id="last-name" name="last_name" class="form-control" placeholder="Your last name" required autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form-row" style="margin-bottom:1.25rem;">
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true" style="color:var(--color-terracotta);">*</span></label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 555 000 0000" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form-row" style="margin-bottom:1.25rem;">
+            <div class="form-group">
+              <label for="nationality">Nationality <span aria-hidden="true" style="color:var(--color-terracotta);">*</span></label>
+              <input type="text" id="nationality" name="nationality" class="form-control" placeholder="e.g. American, German, French..." required autocomplete="country-name" />
+            </div>
+            <div class="form-group">
+              <label for="travelers">Number of Travelers <span aria-hidden="true" style="color:var(--color-terracotta);">*</span></label>
+              <select id="travelers" name="travelers" class="form-control" required>
+                <option value="" disabled selected>Select group size</option>
+                <option value="1">1 Person (Solo)</option>
+                <option value="2">2 People (Couple)</option>
+                <option value="3-5">3–5 People (Small Group)</option>
+                <option value="6-10">6–10 People (Group)</option>
+                <option value="11-15">11–15 People (Large Group)</option>
+                <option value="15+">15+ People (Custom)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label for="tour">Tour of Interest <span aria-hidden="true" style="color:var(--color-terracotta);">*</span></label>
+            <select id="tour" name="tour_of_interest" class="form-control" required>
+              <option value="" disabled selected>Select a tour package</option>
+              <optgroup label="Multi-Destination Packages">
+                <option value="homecoming">The Homecoming — 8 Days (Addis · Lalibela · Gondar) from $2,400</option>
+                <option value="timket">Timket in Lalibela — 4 Days (January Only) from $2,800</option>
+                <option value="highlands-heritage">Highlands &amp; Heritage — 12 Days (Full Northern Circuit) from $4,200</option>
+                <option value="southern-rift-valley">Southern Ethiopia &amp; Rift Valley — 7 Days (Ground-Only) from $1,800</option>
+              </optgroup>
+              <optgroup label="Addis Ababa Experiences">
+                <option value="addis-essentials">Addis Essentials — 1 Day from $120/person</option>
+                <option value="addis-deep-dive">Addis Deep Dive — 3 Days from $380/person</option>
+                <option value="coffee-trail">The Coffee Trail — Half Day $100/person</option>
+                <option value="food-journey">The Food Journey — Half Day $150/person</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="custom">Custom Itinerary (Please describe below)</option>
+                <option value="car-rental">Car Rental Only</option>
+                <option value="hotel">Hotel Reservation Only</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-row" style="margin-bottom:1.25rem;">
+            <div class="form-group">
+              <label for="travel-date">Preferred Travel Date <span aria-hidden="true" style="color:var(--color-terracotta);">*</span></label>
+              <input type="date" id="travel-date" name="travel_date" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="flexibility">Date Flexibility</label>
+              <select id="flexibility" name="date_flexibility" class="form-control">
+                <option value="" disabled selected>How flexible are you?</option>
+                <option value="exact">Exact dates required</option>
+                <option value="1-week">±1 week flexibility</option>
+                <option value="2-weeks">±2 weeks flexibility</option>
+                <option value="month">Open to any time within a month</option>
+                <option value="season">Open to entire season</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom:1.25rem;">
+            <label for="budget">Budget Range per Person (USD)</label>
+            <select id="budget" name="budget" class="form-control">
+              <option value="" disabled selected>Approximate budget (optional)</option>
+              <option value="under-2000">Under $2,000</option>
+              <option value="2000-3500">$2,000 – $3,500</option>
+              <option value="3500-5000">$3,500 – $5,000</option>
+              <option value="5000-7500">$5,000 – $7,500</option>
+              <option value="7500+">$7,500+</option>
+              <option value="not-sure">Not sure — please advise</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-bottom:2rem;">
+            <label for="requests">Special Requests & Additional Information</label>
+            <textarea id="requests" name="special_requests" class="form-control" rows="5" placeholder="Tell us about any special requirements, interests, dietary needs, physical limitations, or anything else that would help us tailor your perfect Ethiopian journey..."></textarea>
+          </div>
+
+          <div style="background:var(--color-cream); border:1px solid var(--color-border); border-radius:var(--radius-md); padding:1.25rem; margin-bottom:1.5rem; display:flex; gap:.75rem; align-items:flex-start;">
+            <svg style="color:var(--color-gold);flex-shrink:0;margin-top:2px;" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <p style="font-size:.875rem; line-height:1.6; max-width:none; color:var(--color-text-mid);">This form is a <strong>no-obligation inquiry</strong>. We will respond within 24–48 hours with a personalized itinerary, pricing, and availability. No payment is required at this stage.</p>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%; justify-content:center;">
+            Send Inquiry
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div style="display:flex; flex-direction:column; gap:1.5rem;" class="reveal reveal-right">
+
+        <div class="contact-card">
+          <h3>Talk to Us Directly</h3>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value">
+                <a href="tel:+251115505566">+251-11-5505566</a><br/>
+                <a href="tel:+251115505657">+251-11-5505657</a><br/>
+                <a href="tel:+251911637709">+251-911-637709</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">
+                <a href="mailto:info@ghiontour.com">info@ghiontour.com</a><br/>
+                <a href="mailto:getnetyoseph@yahoo.com">getnetyoseph@yahoo.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Response Time</div>
+              <div class="contact-info-value">Within 24–48 hours</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-xl); padding:1.75rem;">
+          <h4 style="margin-bottom:1.25rem; color:var(--color-green);">What Happens Next?</h4>
+          <div style="display:flex; flex-direction:column; gap:1rem;">
+            <div style="display:flex; gap:1rem; align-items:flex-start;">
+              <div style="width:32px;height:32px;background:var(--color-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-espresso);font-weight:700;font-size:.875rem;flex-shrink:0;">1</div>
+              <div>
+                <div style="font-weight:600; font-size:.9375rem; margin-bottom:.25rem;">We review your inquiry</div>
+                <p style="font-size:.875rem; max-width:none;">Our team carefully reviews your dates, interests, and preferences.</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:1rem; align-items:flex-start;">
+              <div style="width:32px;height:32px;background:var(--color-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-espresso);font-weight:700;font-size:.875rem;flex-shrink:0;">2</div>
+              <div>
+                <div style="font-weight:600; font-size:.9375rem; margin-bottom:.25rem;">Personalized proposal</div>
+                <p style="font-size:.875rem; max-width:none;">Within 24–48 hours, you receive a detailed itinerary and quote tailored specifically to you.</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:1rem; align-items:flex-start;">
+              <div style="width:32px;height:32px;background:var(--color-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-espresso);font-weight:700;font-size:.875rem;flex-shrink:0;">3</div>
+              <div>
+                <div style="font-weight:600; font-size:.9375rem; margin-bottom:.25rem;">Refine & confirm</div>
+                <p style="font-size:.875rem; max-width:none;">We work with you to perfect every detail before securing your booking.</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:1rem; align-items:flex-start;">
+              <div style="width:32px;height:32px;background:var(--color-green);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--color-gold);font-weight:700;font-size:.875rem;flex-shrink:0;">✓</div>
+              <div>
+                <div style="font-weight:600; font-size:.9375rem; margin-bottom:.25rem;">Your adventure begins!</div>
+                <p style="font-size:.875rem; max-width:none;">Relax — we handle everything from here. See you in Ethiopia!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--color-cream); border:1px solid var(--color-border); border-radius:var(--radius-xl); padding:1.75rem;">
+          <h4 style="margin-bottom:1rem; color:var(--color-green);">Our Memberships</h4>
+          <div style="display:flex; flex-wrap:wrap; gap:.75rem;">
+            <span style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-sm); padding:.375rem .75rem; font-size:.8125rem; font-weight:700; color:var(--color-text-mid);">SafariBookings</span>
+            <span style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-sm); padding:.375rem .75rem; font-size:.8125rem; font-weight:700; color:var(--color-text-mid);">NTA</span>
+            <span style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-sm); padding:.375rem .75rem; font-size:.8125rem; font-weight:700; color:var(--color-text-mid);">Skål International</span>
+            <span style="background:#fff; border:1px solid var(--color-border); border-radius:var(--radius-sm); padding:.375rem .75rem; font-size:.8125rem; font-weight:700; color:var(--color-text-mid);">ATTA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo"><div class="footer-logo-mark">GTT</div><div class="footer-logo-text"><span class="footer-logo-name">Ghion Travel & Tours</span><span class="footer-logo-tagline">The Name You Trust</span></div></a>
+        <p class="footer-desc">Ethiopia's premier travel company since 1998 — delivering extraordinary journeys with unmatched expertise, care, and passion.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="footer-social" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="footer-social" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.47a2.78 2.78 0 0 0-1.95 1.95A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.53C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#2C1A0E"/></svg></a>
+          <a href="#" class="footer-social" aria-label="Twitter/X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links" role="list"><li><a href="index.html" class="footer-link">Home</a></li><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="ethiopia.html" class="footer-link">Discover Ethiopia</a></li><li><a href="gallery.html" class="footer-link">Gallery</a></li><li><a href="contact.html" class="footer-link">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Our Tours</h4><ul class="footer-links" role="list"><li><a href="tours.html#historical" class="footer-link">Historical Tours</a></li><li><a href="tours.html#nature" class="footer-link">Nature & Adventure</a></li><li><a href="tours.html#trekking" class="footer-link">Trekking</a></li><li><a href="tours.html#birds" class="footer-link">Bird Watching</a></li><li><a href="tours.html#cultural" class="footer-link">Cultural & Festivals</a></li><li><a href="tours.html#omo" class="footer-link">Omo Valley</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+251-11-5505566<br/>+251-911-637709</span></div><div class="footer-contact-item"><svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span><a href="mailto:info@ghiontour.com">info@ghiontour.com</a></span></div></div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025 Ghion Travel and Tours P.L.C. | Addis Ababa, Ethiopia</p>
+      <div class="footer-member-logos"><span class="footer-member-logo">SafariBookings</span><span class="footer-member-logo">NTA</span><span class="footer-member-logo">Skål</span><span class="footer-member-logo">ATTA</span></div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
